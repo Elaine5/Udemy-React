@@ -1,7 +1,5 @@
 
 /* //var  nome = "Elaine";
-
-
 // função entrar // innerHTML = string
 
 // if = se
@@ -17,15 +15,11 @@ function entrar(){
     }else{
         area.innerHTML = 'Bem vindo ' + texto;
     }
-
 }
-
 function entrar2(nome){
-
     var area = document.getElementById('area2');
     var texto = prompt('Digite seu sobrenome?');
     area.innerHTML = nome + " " + texto;
-
 } 
 
 // Aprendendo LOOP
@@ -42,7 +36,6 @@ while(x < 10){
 }
 
 document.write("</br></br></br> O X esta valendo: "+ x + "</br></br>");
-
 
 // For = Para (pode declarar mais de uma condicao)
 
@@ -77,7 +70,7 @@ function pedir(){
             alert("Ops nao temos essa opcao");
             break;    
     }
-} */
+} 
 
 function acao(){
     document.write("Executando...<br/>");
@@ -86,4 +79,12 @@ function acao(){
 // Executa de tempo em tempo!
 // setInterval(acao, 1000);
 
-setTimeout(acao, 3000);
+setTimeout(acao, 3000); */
+
+var nome = '';
+if( typeof localStorage.nome == 'undefined'){
+    localStorage.nome = prompt("Digite seu nome");
+}
+ nome = localStorage.nome;
+
+ document.getElementById('nome').innerHTML = nome;
